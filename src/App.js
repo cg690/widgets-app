@@ -45,7 +45,6 @@ export default () => {
 
   return (
     <div>
-      <h1>HELLOooooooooooo</h1>
       <Header />
       <Route path="/">
         <Accordion items={items} />
