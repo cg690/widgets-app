@@ -41,27 +41,4 @@ const Accordion = (props) => {
 
 
 
-
-
-
-
-// const Counter = () => {
-
-//   const [count, setCount] = useState(0);
-
-//   const onAddClick = () => {
-//     setCount(count+1)
-//   } 
-
-
-//   const renderedItems = 
-//     <div>
-//       <h1>Counter: {count}</h1>
-//       <button onClick={onAddClick}>+1</button>
-//       <button onClick={() => setCount(count-1)}>-1</button>
-//     </div>
-//   return <div>{renderedItems}</div>
-// }
-// export {Counter as Counter};
-
 export default Accordion 

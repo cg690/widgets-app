@@ -1,9 +1,8 @@
 import React, {useState, useEffect} from 'react';
-import ReactDOM from 'react';
 import axios from 'axios';
 
 const Search = () => {
-  const [term, setTerm] = useState('programming');
+  const [term, setTerm] = useState('React Programming');
   const [debouncedTerm, setDebouncedTerm] = useState(term);
   const [results, setResults] = useState([]);
   //console.log(results);
@@ -37,26 +36,6 @@ const Search = () => {
 
 
   }, [debouncedTerm])
-
-  // useEffect(() => {
-
-    
-    
-  //   if(term && !results.length){
-  //     search();
-  //   }
-  //   else{
-  //     const timeoutId = setTimeout(() => {
-  //       if(term){
-  //         search();
-  //       }
-  //     }, 500);
-  //   return () => {
-  //     clearTimeout(timeoutId)
-  //   }
-  //   }
-    
-  // },[term]);
 
   const renderedResults = results.map((result) => {
     return(
